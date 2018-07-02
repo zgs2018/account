@@ -12,9 +12,11 @@
 */
 
 Route::get('/','IndexController@index');
+Route::get('/detail','IndexController@detail')->name('detail');
 //
-//Route::get('/login', 'AuthController@login');
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+
+Route::get('/test', 'IndexController@test')->name('test');
