@@ -17,6 +17,8 @@ class AuthInterceptMiddleware
     {
         // TODO 验证请求是否合法
         $query              =   $request->only(['redirectUrl','appKey']);
+        dump($query);
+        exit;
         // TODO 是否已经授权
         //  doesn't auth
         //      TODO 存储请求体信息、取消拦截显示登录页面
